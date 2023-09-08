@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
+import Nav from './components/Nav'
 import './App.css'
 
 function App() {
@@ -8,12 +9,15 @@ function App() {
   return (
     <>
       <div>
-      <h1>Broadway Bagel & Deli</h1>
-      <p>
-        839 Broadway Brooklyn, NY 11206
-        <br />
-        PHONE: 718-490-5534
-      </p>
+        <header>
+          <Nav />
+        </header>
+        <h1>Broadway Bagel & Deli</h1>
+        <p>
+          839 Broadway Brooklyn, NY 11206
+          <br />
+          PHONE: 718-490-5534
+        </p>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -26,11 +30,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
