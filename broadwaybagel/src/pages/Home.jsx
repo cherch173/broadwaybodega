@@ -25,7 +25,7 @@ const Home = () => {
                 <img src="/bodega_sando.png" className="logo sando" alt="React logo" />
                 <br />
                 <br />
-                <figcaption>click me to enter</figcaption>
+                <figcaption>click here to enter</figcaption>
             </a>
             <br />
             <br />

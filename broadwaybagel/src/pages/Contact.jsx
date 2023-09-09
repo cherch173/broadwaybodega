@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Contact = () => {
     return (
@@ -15,6 +16,13 @@ const Contact = () => {
             <p>
                 EMAIL: <a href="mailto:sky9king@gmail.com">broadywaybagelsanddeli@gmail.com</a>
             </p>
+            <br />
+            <br />
+            <Link to="/">
+                <button>back</button>
+            </Link>
+            <br />
+            <br />
         </div>
     )
 }
