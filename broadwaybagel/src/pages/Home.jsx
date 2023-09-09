@@ -17,11 +17,11 @@ const Home = () => {
                 <br />
                 PHONE: 718-490-5534
             </p>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <a href="/orders" target="_blank">
                 {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
             </a>
             <br />
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <a href="/orders" target="_blank">
                 <img src="public/bodega_sando.png" className="logo sando" alt="React logo" />
                 <br />
                 <br />
@@ -29,7 +29,7 @@ const Home = () => {
             </a>
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
+                    {count} likes
                 </button>
             </div>
         </div>

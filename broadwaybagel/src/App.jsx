@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Order from './pages/Order'
 import viteLogo from '/vite.svg'
 import Nav from './components/Nav'
 import './App.css'
@@ -21,6 +23,8 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />}/>
+            <Route path="/contact" element={<Contact />}/>
+            <Route path="/order" element={<Order />}/>
           </Routes>
         </main>
       </div>
