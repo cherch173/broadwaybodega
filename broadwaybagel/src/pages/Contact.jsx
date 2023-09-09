@@ -5,7 +5,7 @@ const Contact = () => {
         <div>
             <h1 className="headerText">Contact Us</h1>
             <br />
-            <h3>Broadway Bagels & Deli</h3>
+            <h3>Munchies, Bagels & More</h3>
             <p>
                 839 Broadway Brooklyn, NY 11206
             </p>

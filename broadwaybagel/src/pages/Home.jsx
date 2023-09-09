@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Broadway Bagel & Deli</h1>
+            <h1>Munchies, Bagels & More</h1>
             <p>
                 839 Broadway Brooklyn, NY 11206
                 <br />
@@ -22,7 +22,7 @@ const Home = () => {
             </a>
             <br />
             <a href="/order">
-                <img src="public/bodega_sando.png" className="logo sando" alt="React logo" />
+                <img src="/bodega_sando.png" className="logo sando" alt="React logo" />
                 <br />
                 <br />
                 <figcaption>click me to enter</figcaption>
