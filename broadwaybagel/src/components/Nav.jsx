@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Nav = () => {
     return (
-        <div>
+        <div className="nav">
             <nav>
                 <ul>
-                    home | place an order | about | contact
+                    <Link to="/">home </Link>
+                    <Link to="/order">place an order </Link>
+                    <Link to="/contact">contact </Link>
                 </ul>
             </nav>
         </div>
