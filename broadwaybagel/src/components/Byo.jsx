@@ -15,7 +15,6 @@ const Byo = () => {
                     <option value="Roll">Roll</option>
                     <option value="Wrap">Wrap</option>
                 </select>
-                <br />
                 <label htmlFor="meat">Meat (by Boar's Head) </label>
                 <select default="Roll" className="dropdown" id="bread">
                     <option value="Ovengold Turkey">Ovengold Turkey</option>
@@ -37,7 +36,6 @@ const Byo = () => {
                     <option value="Genoa Pastrami">Genoa Salami</option>
                     <option value="Hard Salami">Hard Salami</option>
                 </select>
-                <br />
                 <label htmlFor="cheese">Cheese (by Boar's Head) </label>
                 <select name="cheese" default="Mozzarella" className="dropdown" id="cheese">
                     <option value="Mozzarella">Mozzarella</option>
@@ -52,7 +50,6 @@ const Byo = () => {
                     <option value="Parmasean">Parmasean</option>
                     <option value="Brie">Brie</option>
                 </select>
-                <br />
                 <label htmlFor="Toppings">Toppings</label>
                 <select name="toppings" className="dropdown" id="toppings" multiple>
                     <option value="Lettuce">Lettuce</option>
@@ -66,9 +63,30 @@ const Byo = () => {
                     <option value="Pepperoncini">Pepperoncini</option>
                     <option value="Grilled Bell Peppers">Grilled Bell Peppers</option>
                 </select>
+                <label htmlFor="condiments">Condiments</label>
+                <select name="toppings" className="dropdown" id="toppings" multiple>
+                    <option value="Deli Mustard">Deli Mustard</option>
+                    <option value="Yellow Mustard">Yellow Mustard</option>
+                    <option value="Mayonnaise">Mayonnaise</option>
+                    <option value="Light Mayonnaise">Light Mayonnaise</option>
+                    <option value="Chipotle Mayonnaise">Chipotle Mayonnaise</option>
+                    <option value="Tapatio">Tapatío</option>
+                    <option value="Cholula">Cholula</option>
+                    <option value="Valentino">Valentino</option>
+                    <option value="Ketchup">Ketchup</option>
+                    <option value="Jerk Sauce">Jerk Sauce</option>
+                    <option value="Olive Oil">Olive Oil</option>
+                </select>
+                <label htmlFor="notes">Notes for Order</label>
+                <textarea className="notes" name="notes" id="notes" cols="30" rows="8"></textarea>
+                <br />
+                <button className="button" type="submit">submit</button>
             </form>
             <br />
-            <button className="button" type="submit">submit</button>
+            <br />
+            <Link to="/">
+                <button>back</button>
+            </Link>
         </div>
     )
 }
