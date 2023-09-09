@@ -50,7 +50,7 @@ const Byo = () => {
                     <option value="Parmasean">Parmasean</option>
                     <option value="Brie">Brie</option>
                 </select>
-                <label htmlFor="Toppings">Toppings</label>
+                <label htmlFor="Toppings">Toppings (select multiple)</label>
                 <select name="toppings" className="dropdown" id="toppings" multiple>
                     <option value="Lettuce">Lettuce</option>
                     <option value="Tomatoes">Tomatoes</option>
@@ -63,7 +63,7 @@ const Byo = () => {
                     <option value="Pepperoncini">Pepperoncini</option>
                     <option value="Grilled Bell Peppers">Grilled Bell Peppers</option>
                 </select>
-                <label htmlFor="condiments">Condiments</label>
+                <label htmlFor="condiments">Condiments (select multiple)</label>
                 <select name="toppings" className="dropdown" id="toppings" multiple>
                     <option value="Deli Mustard">Deli Mustard</option>
                     <option value="Yellow Mustard">Yellow Mustard</option>
@@ -78,7 +78,7 @@ const Byo = () => {
                     <option value="Olive Oil">Olive Oil</option>
                 </select>
                 <label htmlFor="notes">Notes for Order</label>
-                <textarea className="notes" name="notes" id="notes" cols="30" rows="8"></textarea>
+                <textarea className="notes" name="notes" id="notes" cols="36" rows="8"></textarea>
                 <br />
                 <button className="button" type="submit">submit</button>
             </form>
