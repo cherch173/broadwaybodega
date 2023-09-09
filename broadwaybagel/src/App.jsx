@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import Order from './pages/Order'
 import Nav from './components/Nav'
 import SocialNav from './components/SocialNav'
+import Byo from './components/Byo'
 import './App.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/contact" element={<Contact />}/>
             <Route path="/order" element={<Order />}/>
+            <Route path="/byo" element={<Byo />}/>
           </Routes>
         </main>
       </div>
