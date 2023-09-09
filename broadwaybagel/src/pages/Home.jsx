@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     const getYear = () => {
         return new Date().getUTCFullYear()
-      }
-      const [count, setCount] = useState(0)
+    }
+    const [count, setCount] = useState(0)
 
-      
+
     return (
         <div>
             <h1>Broadway Bagel & Deli</h1>
@@ -21,13 +21,15 @@ const Home = () => {
                 {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
             </a>
             <br />
-            <a href="/orders" target="_blank">
+            <a href="/order">
                 <img src="public/bodega_sando.png" className="logo sando" alt="React logo" />
                 <br />
                 <br />
                 <figcaption>click me to enter</figcaption>
             </a>
-            <div className="card">
+            <br />
+            <br />
+            <div className="likebutton">
                 <button onClick={() => setCount((count) => count + 1)}>
                     {count} likes
                 </button>

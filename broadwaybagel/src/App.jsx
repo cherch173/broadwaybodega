@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Order from './pages/Order'
-import viteLogo from '/vite.svg'
 import Nav from './components/Nav'
+import SocialNav from './components/SocialNav'
 import './App.css'
 
 function App() {
