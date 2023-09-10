@@ -1,7 +1,7 @@
 #root {
   max-width: 100vmin;
   margin: 0 auto;
-  padding: 2vmin;
+  padding: 1vmin;
   text-align: center;
 }
 
@@ -135,6 +135,10 @@ figcaption:hover {
   box-shadow: 0px 0px 2px 2px rgba(119, 185, 148, .73);
 }
 
+p {
+  color: whitesmoke;
+}
+
 form {
   display: grid;
   justify-content: center;
@@ -177,6 +181,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.footer {
+margin-top: 16vmin;
+position: static;
+top: 100%;
 }
 
 

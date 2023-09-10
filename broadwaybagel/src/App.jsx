@@ -4,9 +4,9 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Order from './pages/Order'
 import Nav from './components/Nav'
-import SocialNav from './components/SocialNav'
 import Byo from './components/Byo'
 import Test from './components/Test'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -31,6 +31,13 @@ function App() {
             <Route path="/test" element={<Test />}/>
           </Routes>
         </main>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Footer />
       </div>
     </>
   )

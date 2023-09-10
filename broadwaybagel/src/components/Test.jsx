@@ -5,19 +5,19 @@ import { Link } from 'react-router-dom'
 
 const Test = () => {
 
-  const [menu, setMenu] = useState('')
+  const [merchant, setMerchant] = useState('')
 
-  const getMenu = async () => {
+  const getMerchant = async () => {
     try {
       const res = await axios.get(`https://sandbox.dev.clover.com/v3/merchants/PE3YVG7423SQ1`)
-      setMenu(res.data)
+      setMerchant(res.data)
     } catch (err) {
       console.log(err)
     }
   }
 
   useEffect(() => {
-    getMenu()
+    getMerchant()
   }, [])
 
 
@@ -25,7 +25,7 @@ const Test = () => {
     <div>
       <h1>Clover API Testing Grounds</h1>
       <br />
-      <p>{menu.name !== '' && menu.name}</p>
+      <p>{merchant.name !== '' && merchant.name}</p>
       <br />
             <br />
             <Link to="/">

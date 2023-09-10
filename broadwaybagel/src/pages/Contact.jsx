@@ -23,6 +23,7 @@ const Contact = () => {
             </Link>
             <br />
             <br />
+            <br />
         </div>
     )
 }
