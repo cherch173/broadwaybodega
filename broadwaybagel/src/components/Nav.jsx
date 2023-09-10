@@ -11,6 +11,7 @@ const Nav = () => {
                     <Link to="/">home </Link>
                     <Link to="/order">order online </Link>
                     <Link to="/contact">contact </Link>
+                    <Link to="/test">sandbox </Link>
                 </ul>
                 <br />
                 <SocialNav />
