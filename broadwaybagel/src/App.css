@@ -89,6 +89,8 @@ figcaption:hover {
 }
 
 .card {
+  display: grid;
+  place-items: center;
   padding: 1vmin;
   margin: 2vmin;
   border-radius: 5px;
@@ -105,7 +107,7 @@ figcaption:hover {
 }
 
 .menuImage:hover {
-  filter: drop-shadow(0 0 2vmin #61dafbaa);
+  filter: drop-shadow(0 0 1.73vmin #61dafbaa);
 }
 
 .drinksImage {

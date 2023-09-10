@@ -11,23 +11,23 @@ const Order = () => {
                     <figure>
                         <Link to="/byo">
                             <img className="menuImage" src="/bodega_sando.png" alt="sando" />
-                            <figcaption>deli sandwiches</figcaption>
+                            <figcaption>build your own sandwich</figcaption>
                         </Link>
                     </figure>
                     <figure>
-                        <Link to="/byo">
+                        <Link to="/test">
                             <img className="drinksImage" src="/topo.png" alt="sando" />
                             <figcaption>drinks</figcaption>
                         </Link>
                     </figure>
                     <figure>
-                        <Link to="/byo">
+                        <Link to="/test">
                             <img className="drinksImage" src="/zapps.png" alt="sando" />
                             <figcaption>chips</figcaption>
                         </Link>
                     </figure>
                     <figure>
-                        <Link to="/byo">
+                        <Link to="/test">
                             <img className="drinksImage" src="/bagel.png" alt="sando" />
                             <figcaption>bagels</figcaption>
                         </Link>
