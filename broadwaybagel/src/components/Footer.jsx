@@ -7,6 +7,7 @@ const Footer = () => {
 
     return (
         <div>
+            <br />
             <footer className="footer">
                 © {getYear()} Cherch, all rights reserved.
                 <a className="footerLink" target="_blank" href="mailto:accawebdevelopment@gmail.com">CONTACT</a>
