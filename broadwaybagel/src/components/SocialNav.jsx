@@ -12,7 +12,7 @@ const SocialNav = () => {
                     <img className="socialImage" src="https://www.freeiconspng.com/thumbs/facebook-icon-png/facebook-icon--basic-round-social-iconset--s-icons-7.png" alt="fbImage" />
                 </Link>
                 <Link to="https://www.grubhub.com/restaurant/munchies-bagel-and-more-839-broadway-brooklyn/6505152" target="_blank">
-                    <img className="socialImage" src="https://play-lh.googleusercontent.com/GW8STXgI-XEkNhvs69KeNSBzmBzz3GGwvE1o3W8gNJUxVGySDz0JqBuWaKzskUsKFNg" alt='grubhubImage' />
+                    <img className="socialImage" src="https://pbs.twimg.com/profile_images/1430006633548091404/AI2-ZKur_400x400.jpg" alt='grubhubImage' />
                 </Link>
                 <Link to="https://www.doordash.com/store/munchies-bagel-and-more---brooklyn-25126634/" target="_blank">
                     <img className="socialImage" src="https://e7.pngegg.com/pngimages/696/964/png-clipart-doordash-round-logo-tech-companies-thumbnail.png" alt='ddImage' />
