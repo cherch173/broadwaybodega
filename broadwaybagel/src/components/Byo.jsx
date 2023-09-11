@@ -11,8 +11,10 @@ const Byo = (props) => {
         bread: '',
         meat: '',
         cheese: '',
-        toppings: '',
-        condiments: '',
+        topping1: '',
+        topping2: '',
+        condiment1: '',
+        condiment2: '',
         notes: ''
     }
 
@@ -32,20 +34,19 @@ const Byo = (props) => {
 
 
 
-
     return (
         <div>
             <h1 className="headerText">Build Your Own Sandwich</h1>
             <br />
             <form onSubmit={handleSubmit}>
                 <label htmlFor="bread">Bread</label>
-                <select default="Roll" className="dropdown" id="bread">
+                <select className="dropdown" id="bread" value={sando.bread} onChange={handleChange}>
                     <option value="Hero">Hero</option>
                     <option value="Roll">Roll</option>
                     <option value="Wrap">Wrap</option>
                 </select>
                 <label htmlFor="meat">Meat (by Boar's Head) </label>
-                <select default="" className="dropdown" id="meat">
+                <select default="Cracked Pepper Turkey" className="dropdown" id="meat" value={sando.meat} onChange={handleChange}>
                     <option value="Ovengold Turkey">Ovengold Turkey</option>
                     <option value="Honey Turkey">Honey Turkey</option>
                     <option value="Cracked Pepper Turkey">Cracked Pepper Turkey</option>
@@ -66,7 +67,7 @@ const Byo = (props) => {
                     <option value="Hard Salami">Hard Salami</option>
                 </select>
                 <label htmlFor="cheese">Cheese (by Boar's Head) </label>
-                <select name="cheese" default="Mozzarella" className="dropdown" id="cheese">
+                <select name="cheese" default="Mozzarella" className="dropdown" id="cheese" value={sando.cheese} onChange={handleChange}>
                     <option value="Mozzarella">Mozzarella</option>
                     <option value="Swiss">Swiss</option>
                     <option value="Sharp Cheddar">Sharp Cheddar</option>
@@ -79,8 +80,10 @@ const Byo = (props) => {
                     <option value="Parmasean">Parmasean</option>
                     <option value="Brie">Brie</option>
                 </select>
-                <label htmlFor="Toppings">Toppings (select multiple)</label>
-                <select name="toppings" className="dropdown" id="toppings" multiple>
+                <label htmlFor="Toppings">Topping #1</label>
+                <select name="topping1" className="dropdown" id="topping1" onChange={handleChange}>
+                    <option value="Full Stack (Lettuce, Tomatoes, Pickles)">Full Stack (Lettuce, Tomatoes, Pickles)</option>
+                    <option value="Health Stack (Spinach, Tomatoes, Pickles)">Health Stack (Spinach, Tomatoes, Pickles)</option>
                     <option value="Lettuce">Lettuce</option>
                     <option value="Tomatoes">Tomatoes</option>
                     <option value="Dill Pickles">Dill Pickles</option>
@@ -92,8 +95,23 @@ const Byo = (props) => {
                     <option value="Pepperoncini">Pepperoncini</option>
                     <option value="Grilled Bell Peppers">Grilled Bell Peppers</option>
                 </select>
-                <label htmlFor="condiments">Condiments (select multiple)</label>
-                <select name="toppings" className="dropdown" id="toppings" multiple>
+                <label htmlFor="Toppings">Topping #2</label>
+                <select name="topping2" className="dropdown" id="topping2" onChange={handleChange}>
+                    <option value="Full Stack (Lettuce, Tomatoes, Pickles)">Full Stack (Lettuce, Tomatoes, Pickles)</option>
+                    <option value="Health Stack (Spinach, Tomatoes, Pickles)">Health Stack (Spinach, Tomatoes, Pickles)</option>
+                    <option value="Lettuce">Lettuce</option>
+                    <option value="Tomatoes">Tomatoes</option>
+                    <option value="Dill Pickles">Dill Pickles</option>
+                    <option value="Sliced Onion">Sliced Onion</option>
+                    <option value="Grilled Onion">Grilled Onion</option>
+                    <option value="Avocado">Avocado</option>
+                    <option value="Spinach">Spinach</option>
+                    <option value="Mushrooms">Mushrooms</option>
+                    <option value="Pepperoncini">Pepperoncini</option>
+                    <option value="Grilled Bell Peppers">Grilled Bell Peppers</option>
+                </select>
+                <label htmlFor="condiments">Condiment #1</label>
+                <select name="condiment1" className="dropdown" id="condiment1" value={sando.condiment1} onChange={handleChange}>
                     <option value="Deli Mustard">Deli Mustard</option>
                     <option value="Yellow Mustard">Yellow Mustard</option>
                     <option value="Mayonnaise">Mayonnaise</option>
@@ -106,8 +124,24 @@ const Byo = (props) => {
                     <option value="Jerk Sauce">Jerk Sauce</option>
                     <option value="Olive Oil">Olive Oil</option>
                 </select>
+                <label htmlFor="condiments">Condiment #2</label>
+                <select name="condiment2" className="dropdown" id="condiment2" value={sando.condiment2}onChange={handleChange}>
+                    <option value="Yellow Mustard">Yellow Mustard</option>
+                    <option value="Deli Mustard">Deli Mustard</option>
+                    <option value="Mayonnaise">Mayonnaise</option>
+                    <option value="Light Mayonnaise">Light Mayonnaise</option>
+                    <option value="Chipotle Mayonnaise">Chipotle Mayonnaise</option>
+                    <option value="Tapatio">Tapatío</option>
+                    <option value="Cholula">Cholula</option>
+                    <option value="Valentino">Valentino</option>
+                    <option value="Ketchup">Ketchup</option>
+                    <option value="Jerk Sauce">Jerk Sauce</option>
+                    <option value="Olive Oil">Olive Oil</option>
+                </select>
                 <label htmlFor="notes">Notes for Order</label>
                 <textarea
+                    value={sando.notes}
+                    onChange={handleChange}
                     className="notes" 
                     name="notes" 
                     id="notes" 
