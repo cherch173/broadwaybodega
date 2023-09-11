@@ -91,6 +91,7 @@ const Byo = (props) => {
                 <select name="topping1" className="dropdown" id="topping1" onChange={handleChange}>
                     <option value="Full Stack (Lettuce, Tomatoes, Pickles)">Full Stack (Lettuce, Tomatoes, Pickles)</option>
                     <option value="Health Stack (Spinach, Tomatoes, Pickles)">Health Stack (Spinach, Tomatoes, Pickles)</option>
+                    <option value="Half Stack (Spinach, Pickles)">Half Stack (Spinach, Pickles)</option>
                     <option value="Lettuce">Lettuce</option>
                     <option value="Tomatoes">Tomatoes</option>
                     <option value="Dill Pickles">Dill Pickles</option>
