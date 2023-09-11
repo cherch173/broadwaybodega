@@ -4,12 +4,21 @@ import { components } from 'react-select'
 import { useState, useEffect, useRef, useContext } from 'react'
 import { Link } from 'react-router-dom'
 
-const Byo = () => {
+const Byo = (props) => {
+
+    const [sando, setSando] = useState({})
+
+    const [notesState, setNotesState] = useState({
+        notes: ''
+    })
+
+
+
     return (
         <div>
             <h1 className="headerText">Build Your Own Sandwich</h1>
             <br />
-            <form action="#">
+            <form onSubmit='#'>
                 <label htmlFor="bread">Bread</label>
                 <select default="Roll" className="dropdown" id="bread">
                     <option value="Hero">Hero</option>
