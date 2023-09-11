@@ -1,16 +1,35 @@
 import React from 'react'
 import axios from 'axios'
 import { components } from 'react-select'
-import { useState, useEffect, useRef, useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import Client from '../services/api'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Byo = (props) => {
 
-    const [sando, setSando] = useState({})
-
-    const [notesState, setNotesState] = useState({
+    const initialState = {
+        bread: '',
+        meat: '',
+        cheese: '',
+        toppings: '',
+        condiments: '',
         notes: ''
-    })
+    }
+
+    const [sando, setSando] = useState(initialState)
+    const navigate = useNavigate()
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        await Client.post('/byo', sando)
+        setSando(initialState)
+        navigate('/test')
+    }
+
+    const handleChange = (e) => {
+        setSando({...sando, [e.target.id]: e.target.value})
+    }
+
 
 
 
@@ -18,7 +37,7 @@ const Byo = (props) => {
         <div>
             <h1 className="headerText">Build Your Own Sandwich</h1>
             <br />
-            <form onSubmit='#'>
+            <form onSubmit={handleSubmit}>
                 <label htmlFor="bread">Bread</label>
                 <select default="Roll" className="dropdown" id="bread">
                     <option value="Hero">Hero</option>
@@ -26,7 +45,7 @@ const Byo = (props) => {
                     <option value="Wrap">Wrap</option>
                 </select>
                 <label htmlFor="meat">Meat (by Boar's Head) </label>
-                <select default="Roll" className="dropdown" id="bread">
+                <select default="" className="dropdown" id="meat">
                     <option value="Ovengold Turkey">Ovengold Turkey</option>
                     <option value="Honey Turkey">Honey Turkey</option>
                     <option value="Cracked Pepper Turkey">Cracked Pepper Turkey</option>
@@ -88,7 +107,12 @@ const Byo = (props) => {
                     <option value="Olive Oil">Olive Oil</option>
                 </select>
                 <label htmlFor="notes">Notes for Order</label>
-                <textarea className="notes" name="notes" id="notes" cols="36" rows="8"></textarea>
+                <textarea
+                    className="notes" 
+                    name="notes" 
+                    id="notes" 
+                    cols="36" 
+                    rows="8"></textarea>
                 <br />
                 <button className="button" type="submit">submit</button>
             </form>
