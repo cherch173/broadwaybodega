@@ -1,9 +1,9 @@
 import React from 'react'
-import axios from 'axios'
+import Axios from 'axios'
 import { components } from 'react-select'
 import { useState, useEffect, useRef } from 'react'
 import Client from '../services/api'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
 const Byo = (props) => {
 

@@ -31,6 +31,9 @@ const Test = () => {
             <Link to="/">
                 <button>back</button>
             </Link>
+            <Link to="/order">
+                <button>menu</button>
+            </Link>
     </div>
   )
 }

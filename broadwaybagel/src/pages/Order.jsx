@@ -27,7 +27,7 @@ const Order = () => {
                         </Link>
                     </figure>
                     <figure>
-                        <Link to="/test">
+                        <Link to="/byo">
                             <img className="drinksImage" src="/bagel.png" alt="sando" />
                             <figcaption>bagels</figcaption>
                         </Link>
