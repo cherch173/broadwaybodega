@@ -15,6 +15,7 @@ const Byo = (props) => {
         topping2: '',
         condiment1: '',
         condiment2: '',
+        snp: '',
         notes: ''
     }
 
@@ -23,13 +24,13 @@ const Byo = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Client.post('/byo', sando)
+        // await Client.post('/byo', sando)
         setSando(initialState)
-        navigate('/test')
+        navigate('/cart')
     }
 
     const handleChange = (e) => {
-        setSando({...sando, [e.target.id]: e.target.value})
+        setSando({ ...sando, [e.target.id]: e.target.value })
     }
 
 
@@ -149,14 +150,22 @@ const Byo = (props) => {
                     <option value="Jerk Sauce">Jerk Sauce</option>
                     <option value="Olive Oil">Olive Oil</option>
                 </select>
+                <label htmlFor="snp">S&P?</label>
+                <select name="snp" id="snp" onChange={handleChange} value={sando.snp}>
+                    <option value="No S&P">No S&P</option>
+                    <option value="S&P">Yes, indeed. S&P for me.</option>
+                    <option value="Salt">Salt</option>
+                    <option value="Black Pepper">Black Pepper</option>
+                </select>
+
                 <label htmlFor="notes">Notes for Order</label>
                 <textarea
                     value={sando.notes}
                     onChange={handleChange}
-                    className="notes" 
-                    name="notes" 
-                    id="notes" 
-                    cols="36" 
+                    className="notes"
+                    name="notes"
+                    id="notes"
+                    cols="36"
                     rows="8"></textarea>
                 <br />
                 <button className="button" type="submit">submit</button>

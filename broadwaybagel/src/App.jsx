@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import Order from './pages/Order'
 import Nav from './components/Nav'
 import Byo from './components/Byo'
+import Cart from './pages/Cart'
 import Test from './components/Test'
 import Footer from './components/Footer'
 import './App.css'
@@ -28,6 +29,7 @@ function App() {
             <Route path="/contact" element={<Contact />}/>
             <Route path="/order" element={<Order />}/>
             <Route path="/byo" element={<Byo />}/>
+            <Route path="/cart" element={<Cart />}/>
             <Route path="/test" element={<Test />}/>
           </Routes>
         </main>

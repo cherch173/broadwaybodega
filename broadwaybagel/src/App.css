@@ -33,9 +33,17 @@ header {
   margin-bottom: 6vmin;
 }
 
-h1 {
+.headerText {
   font-size: 4vmin;
+  text-shadow: -.25px .25px black, -.30px .30px whitesmoke, -.5px .5px black;
   line-height: 1.1;
+}
+
+.subheaderText {
+  font-size: 3vmin;
+  color: teal;
+  text-shadow: -.25px .25px black, -.30px .30px whitesmoke, -.5px .5px black;
+
 }
 
 a {
