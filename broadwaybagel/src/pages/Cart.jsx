@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { useParams, useState } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
-const Cart = (props) => {
+const Cart = () => {
     return (
         <div>
             <h1 className="headerText">Your Cart</h1>
